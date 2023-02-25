@@ -1,0 +1,51 @@
+@font-face{
+	font-family: icon;
+	font-display: swap;
+	src: url("../fonts/icon.woff2") format("woff2"), url("../fonts/icon.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+[class^="ic-"]:before, [class*=" ic-"]:before {
+	font-family: "icon";
+	font-style: normal;
+	font-weight: normal;
+	speak: never;
+  
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	/* opacity: .8; */
+  
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+  
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+  
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: .2em;
+  
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+  
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+  
+  .ic-close:before { content: '\e800'; } /* '' */
+  .ic-chevron-right:before { content: '\e801'; } /* '' */
+  .ic-chevron-left:before { content: '\e802'; } /* '' */
+  .ic-twitter:before { content: '\f099'; } /* '' */
+  .ic-facebook:before { content: '\f09a'; } /* '' */
+  .ic-menu:before { content: '\f0c9'; } /* '' */
+  .ic-instagram:before { content: '\f16d'; } /* '' */
+  .ic-arrow-right:before { content: '\f178'; } /* '' */
